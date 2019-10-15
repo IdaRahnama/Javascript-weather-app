@@ -40,8 +40,8 @@ window.addEventListener("load",()=>{
 	});
 
 }
-	function SetIcons(icon,iconID){
-		const skycons= new skycons({color:"white"} );
+	function setIcons(icon,iconID){
+		const skycons= new Skycons({color:"white"} );
 		const currentIcon=icon.replace(/-/g,"_").toUpperCase();
 		skycons.play();
 		return skycons.set(iconID,skycons[currentIcon]);
